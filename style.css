@@ -16,7 +16,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 50vh;
+	min-height: 50vh;
+	background-color: aqua;
+}
+
+#models {
+	background-color: bisque;
 }
 
 .grand_block {
@@ -30,10 +35,31 @@ body {
 	justify-content: space-around;
 }
 
+.wrapper_nav a {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0 0 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper_img {
+	min-width: 200px;
+	max-width: 330px;
+}
+
+.wrapper_img img {
+	width: 100%;
+}
+
 h1, h2, h3, h4, nav {
   text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+
+p, ul {
+	padding: 0 5%;
 }
