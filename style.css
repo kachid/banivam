@@ -3,17 +3,23 @@ body {
 	padding: 0px;
 	color: #333;
 	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	background-color: #e9e6e6;
 	background-repeat: repeat-x;
 	background-position: top;
+}
+
+h1, h2, h3, h4, nav {
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 #main_header {
 	display: flex;
   width: 100%;
 	height: 100vh;
-	background-color: aqua;
+	background-color: rgb(214, 186, 62);
 }
 
 .wrapper_main {
@@ -23,7 +29,7 @@ body {
 												"logo tel1"
 												"logo tel2"
 												"logo text";
-	grid-template-rows: auto 1fr 1fr 1fr auto;
+	grid-template-rows: auto 2fr 1fr 1fr auto;
   grid-template-columns: minmax(250px, 1fr) minmax(350px, 2fr);
   align-content: space-between;
   justify-content: center;
@@ -36,6 +42,16 @@ body {
 
 nav {
 	background-color: rgba(233, 201, 117, 0.7);
+	padding: 15px 0;
+}
+
+nav a {
+	margin: 0 30px;
+	font: bold 18px sans-serif;
+}
+
+nav a:hover {
+	text-decoration: underline;
 }
 
 #models {
@@ -44,7 +60,6 @@ nav {
 
 .logo {
 	grid-area: logo;
-	width: 23vw;
 }
 .logo img {
 	width: 100%;
@@ -52,10 +67,12 @@ nav {
 
 .h1 {
 	grid-area: h1;
+	font-size: 26px;
 }
 
 .h2 {
 	grid-area: h2;
+	font-size: 22px;
 }
 
 .tel1 {
@@ -73,6 +90,7 @@ nav {
 
 .grand_block {
 	width: 100%;
+	padding-top: 60px;
 }
 
 .wrapper_nav {
@@ -88,6 +106,7 @@ nav {
 	flex-grow: 0 0 0;
 	align-items: center;
 	justify-content: center;
+	margin-top: 30px;
 }
 
 .wrapper_img {
@@ -97,10 +116,6 @@ nav {
 
 .wrapper_img img {
 	width: 100%;
-}
-
-h1, h2, h3, h4, nav {
-  text-align: center;
 }
 
 a {
