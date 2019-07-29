@@ -47,45 +47,12 @@ h1, h2, h3, h4, nav {
   align-items: center;
   justify-items: center;
 	margin: auto;
-	padding: 0 15%;
+	padding: 0 15vmax;
 	font-size: 20px;
 }
 
 .wrapper_main p {
 	padding: 0;
-}
-
-@media screen and (max-width: 1200px) {
-	.wrapper_main {
-		display: grid;
-		grid-template-areas:  "logo h1"
-													"logo h2"
-													"logo tel1"
-													"logo tel2"
-													"logo text";
-		grid-template-rows: auto 2fr 1fr 1fr auto;
-		grid-template-columns: minmax(250px, 1fr) minmax(350px, 2fr);
-		align-content: space-between;
-		justify-content: center;
-		align-items: center;
-		justify-items: center;
-		margin: auto;
-		padding: 0 15%;
-		font-size: 20px;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.wrapper_main {
-		grid-template-areas:"logo"
-												"h1"
-												"h2"
-												"tel1"
-												"tel2"
-												"text";
-	grid-template-rows: auto auto 2fr 1fr 1fr auto;
-  grid-template-columns: minmax(350px, 2fr);
-	}
 }
 
 nav {
@@ -111,8 +78,8 @@ nav a:hover {
 
 .logo {
 	grid-area: logo;
-	align-self: flex-start;
 }
+
 .logo img {
 	width: 100%;
 }
