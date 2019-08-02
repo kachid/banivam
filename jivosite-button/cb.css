@@ -1,0 +1,93 @@
+.jivocb-container {
+	perspective: 1000;
+  position:fixed;
+  bottom: 45px; /*position Y*/
+  left: 50px; /*position X*/
+}
+.jivocb-container:hover .jivocb-wrap, .jivocb-container.hover .jivocb-wrap {
+		transform: rotateY(180deg);
+ }
+
+.jivocb-container, .jivocb-front, .jivocb-back {
+	width: 80px;
+	height: 80px;
+  border-radius:80px;
+}
+
+.jivocb-wrap {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.jivocb-front, .jivocb-back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.jivocb-front {
+	z-index: 2;
+	transform: rotateY(0deg);
+  background:url('call-button.png') no-repeat;
+  background-size: 90%;
+  background-position:50% 50%;
+  animation: color 6s linear infinite;
+  box-shadow:0 0 0px 0px white, 0 0 6px 10px #44bb6e; /*Green animation*/
+}
+@keyframes color {
+   10%, 15%, 35%, 40%, 60%, 65%, 85%, 90%  {box-shadow:0 0 0px 0px white, 0 0 0px 6px grey ;}
+}
+  
+.jivocb-back {
+  transform: rotateY(180deg);
+   box-shadow:0 0 0px 4px white, 0 0 0px 6px grey;
+  
+}
+ 	.jivocb-container .jivocb-back {
+	  transform: rotateX(180deg);
+	}
+
+	.jivocb-container .jivocb-wrap {
+		transform-origin: 100% 40px; 
+	}
+
+	.jivocb-container:hover .jivocb-wrap {
+		transform: rotateX(-180deg);
+	}
+.jivocb-call {
+  background:url('jcall.png') no-repeat #fff;
+  background-size: 100%;
+  background-position:50% 50%;
+  width:80px;
+  height:40px;
+  border-radius:40px 40px 0 0 ;
+-moz-border-radius:40px 40px 0 0 ;
+-webkit-border-radius:40px 40px 0 0 ;
+}
+
+.jivocb-chat {
+  background:url('jchat.png') no-repeat #fff;
+  background-size: 100%;
+  background-position:50% 50%;
+  width:80px;
+  height:40px;
+  border-radius:0 0 40px 40px ;
+-moz-border-radius:0 0 40px 40px ;
+-webkit-border-radius:0 0 40px 40px ;
+}
+.jivocb-call:hover {
+   background:url('jcall.png') no-repeat #44bb6e;
+  background-size: 100%;
+  background-position:50% 50%;
+  cursor:pointer;
+}
+.jivocb-chat:hover {
+  background:url('jchat.png') no-repeat #44bb6e;
+  background-size: 100%;
+  background-position:50% 50%;
+  cursor:pointer;
+}
