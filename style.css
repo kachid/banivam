@@ -197,6 +197,7 @@ nav a:hover {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	min-width: 230px;
 	flex-basis: 36%;
 	flex-grow: 1;
 	padding: 2%;
@@ -320,6 +321,24 @@ nav a:hover {
 		width: auto;
 		box-sizing: border-box;
 	}
+}
+
+.img_normal {
+	max-width: 200px;
+}
+
+.img_center {
+	margin: 0 auto;
+}
+
+.lazy {
+	margin: 0 15 px;
+}
+
+.carousel {
+	padding: 0 3%;
+	width: 100%; 
+	box-sizing: border-box;
 }
 
 a {
