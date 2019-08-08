@@ -368,6 +368,10 @@ a:hover {
 	opacity: .7;
 }
 
-p, ul {
+p, ul, address {
 	padding: 0 5%;
+}
+
+#contacts address {
+	font-style: normal;
 }
