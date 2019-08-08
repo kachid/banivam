@@ -256,13 +256,14 @@ nav a:hover {
 	max-width: 200px;
 }
 
-.wrapper_img {
-	width: 100%;
-}
-
+.wrapper_img,
 .wrapper_img img,
 .wrapper_nav-img img {
 	width: 100%;
+}
+
+.wrapper_img img {
+	max-width: 100vmin;
 }
 
 .wrapper_price {
@@ -357,6 +358,24 @@ nav a:hover {
 	padding: 0 3%;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+.popup_img {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #e9e6e6;
+}
+
+.popup_img button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 }
 
 a {
