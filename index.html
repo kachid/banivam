@@ -21,14 +21,14 @@
         <img src="./images/logo.png" alt="logo">
       </div>
       <p class="h2">Всегда рядом с вами<sup>*</sup></p>
-      <a class="tel1 text_right" href="tel:+73433833450">&#9990; 8 (343) 383-34-50</a>
-      <a class="tel2 text_right" href="tel:+79221468521"><img src="https://img.icons8.com/office/16/000000/whatsapp.png"> +7 (922) 146-85-21</a>
+      <a class="tel1 text_right wh_bold" href="tel:+73433833450">&#9990; 8 (343) 383-34-50</a>
+      <a class="tel2 text_right wh_bold" href="tel:+79221468521"><img src="https://img.icons8.com/office/16/000000/whatsapp.png"> +7 (922) 146-85-21</a>
       <div class="text">
         <p class="text_center"><b>Здравствуйте, друзья!</b></p>
         <p>Предлагаем вам готовые бани под ключ, с оригинальным дизайном, построенные
           с соблюдением СНиП. Наши бани не рассыхаются и не гниют.</p>
         <p><a href="#map">Приглашаем посетить наше производство</a>, всё посмотрите сами.</p>
-        <p class="text_right"><sup>*</sup><i>для установки бани не требуется фундамент</i></p>
+        <p class="text_right it_bold"><sup>*</sup>для установки бани не требуется фундамент</p>
       </div>
     </div>
   </header>
@@ -76,10 +76,22 @@
         </section>
         <section class="grand_block__main">
           <div class="grand_block__main-left">
+            <!--img card-->
             <div id="img01" class="wrapper_img">
-              <button onclick="zoom('img01')">
-                  <img src="./images/rakush_card.png" alt="РАКУШКА">
+              <button class="noshow route" type="button" onclick="slide1()">&larr;</button>
+              <button type="button" onclick="zoom('img01')">
+                <img src="./images/rakush_card.png" alt="РАКУШКА">
+                <img class="noshow" src="./images/karavela/Каравелла с терассой.jpg" alt="Каравелла с терассой">
+                <img class="noshow" src="./images/karavela/Комната каравелла 6 м.jpg" alt="Комната каравелла 6 м">
+                <img class="noshow" src="./images/karavela/Боковой полок.jpg" alt="Боковой полок">
+                <img src="./images/karavela/Комната общий вид без печи.jpg" alt="Комната общий вид без печи" class="noshow">
+                <img src="./images/karavela/Комната с табуретом.jpg" alt="Комната с табуретом" class="noshow">
+                <img src="./images/karavela/Моечная с кадкой.jpg" alt="Моечная с кадкой" class="noshow">
+                <img src="./images/karavela/Моечная.jpg" alt="Моечная" class="noshow">
+                <img src="./images/karavela/Парилка.jpg" alt="Парилка" class="noshow">
+                <img src="./images/karavela/Светильники крупно.jpg" alt="Светильники" class="noshow">
               </button>
+              <button class="noshow route" type="button" onclick="slide1('next')">&rarr;</button>
             </div>
             <button class="btn btn_video" type="button">
               <a title="Обзор бани РАКУШКА" type="video/mp4" href="./video/Ракушка обзор 2(0).mp4">Смотреть видео обзор</a>
@@ -87,10 +99,10 @@
             <div class="wrapper_price">
               <h3>Цена</h3>
               <ul>
-                <li><b>3x2,4 м - 139'000 руб.</b></li>
-                <li>4x2,4 м - 159'000 руб.</li>
-                <li>5x2,4 м - 179'000 руб.</li>
-                <li>6x2,4 м - 199'000 руб.</li>
+                <li><span class="rank"><b>3 x 2,4 м</b></span> - <span class="rank"><b>144 000 &#8381;</b></span></li>
+                <li><span class="rank">4 x 2,4 м</span> - <span class="rank">164 000 &#8381;</span></li>
+                <li><span class="rank">5 x 2,4 м</span> - <span class="rank">184 000 &#8381;</span></li>
+                <li><span class="rank">6 x 2,4 м</span> - <span class="rank">204 000 &#8381;</span></li>
               </ul>
             </div>
             <button class="btn" type="button">
@@ -102,11 +114,11 @@
             <p>Терраса 1 метр с козырьком, пол: доска шип-паз, резные балясины.</p>
             <p><b>Парная:</b> отделка вагонкой Липа Экстра, воздушный зазор, фольгированный утеплитель 8 мм, сухая обработанная
               доска 40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. <br>Дверь липа. Пол доска 40 мм,
-              герметичный слив, выведенный в трубу наруж, утеплитель 40мм. <br>Двухуровневый полок Липа Экстра, два декоративных
-              светильника, печь Термофор, бак 50 л, дымоход сэндвич, окно, вентиляция.</p>
+              герметичный слив, выведенный в трубу наружу, утеплитель 40мм. <br>Двухуровневый полок Липа Экстра, два декоративных
+              светильника, окно, вентиляция.<br>Печь Термофор, бак 50 л, дымоход сэндвич.</p>
             <p><b>Комната:</b> вагонка сосна сорт АB, воздушный зазор, фольгированный утеплитель 8 мм, сухая обработанная доска
-              40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. Стол, две скамьи сосна, вентиляция.
-              <br>Пол: утеплитель 40 мм, пароизоляция,  доска половая 40 мм шип паз. Дверь липа.</p>
+              40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. <br>Стол, две скамьи сосна, вентиляция.
+              <br>Дверь липа. Пол: утеплитель 40 мм, пароизоляция, доска половая 40 мм шип-паз.</p>
             <p>Скрытая проводка со светодиодными паронепроницаемыми светильниками в каждом отделении.</p>
             <p><b>Основание:</b> обработанная огнебиозащитой доска 50*150, половые лаги, блоки для установки.</p>
             <button class="btn">
@@ -124,10 +136,22 @@
         </section>
         <section class="grand_block__main">
           <div class="grand_block__main-left">
+            <!--img card-->
             <div id="img02" class="wrapper_img">
-              <button onclick="zoom('img02')">
+              <button class="noshow route" type="button" onclick="slide2()">&larr;</button>
+              <button type="button" onclick="zoom('img02')">
                 <img src="./images/scand_card.png" alt="СКАНДИНАВИЯ">
+                <img class="noshow" src="./images/scandinavia/Парилка Скадинавия.jpg" alt="Парилка">
+                <img class="noshow" src="./images/scandinavia/Скадинавия Парилка 2.jpg" alt="Парилка 2">
+                <img src="./images/scandinavia/Скандинавия изнутри.jpg" alt="Скандинавия изнутри" class="noshow">
+                <img src="./images/scandinavia/Скандинавия кадка.jpg" alt="Кадка" class="noshow">
+                <img src="./images/scandinavia/Скандинавия комната.jpg" alt="Комната" class="noshow">
+                <img src="./images/scandinavia/Скандинавия парилка.jpg" alt="Парилка" class="noshow">
+                <img src="./images/scandinavia/Скандинавия печь.jpg" alt="Скандинавия печь" class="noshow">
+                <img src="./images/scandinavia/Скандинавия цех.jpg" alt="цех" class="noshow">
+                <img src="./images/scandinavia/Скандинавия.jpg" alt="Скандинавия" class="noshow">
               </button>
+              <button class="noshow route" type="button" onclick="slide2('next')">&rarr;</button>
             </div>
             <button class="btn btn_video" type="button">
               <a title="Обзор бани КАРАВЕЛЛА" type="video/mp4" href="./video/Обзор Каравелла 6 м.mp4">Смотреть видео обзор</a>
@@ -135,9 +159,9 @@
             <div class="wrapper_price">
               <h3>Цена</h3>
               <ul>
-                <li><b>4x2,4 м - 179'000 руб.</b></li>
-                <li>5x2,4 м - 199'000 руб.</li>
-                <li>6x2,4 м - 219'000 руб.</li>
+                <li><span class="rank"><b>4 x 2,4 м</b></span> - <span class="rank"><b>189 000 &#8381;</b></span></li>
+                <li><span class="rank">5 x 2,4 м</span> - <span class="rank">209 000 &#8381;</span></li>
+                <li><span class="rank">6 x 2,4 м</span> - <span class="rank">229 000 &#8381;</span></li>
               </ul>
             </div>
             <button class="btn" type="button">
@@ -148,10 +172,10 @@
             <h4>Материалы и комплектация</h4>
             <p><b>Парная:</b> отделка вагонкой Липа Экстра, воздушный зазор, фольгированный утеплитель 8 мм, утеплитель
               100 мм, сухая обработанная доска 40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля.
-              <br>Пол доска 40 мм, герметичный слив, выведенный в трубу наружу. Двухуровневый полок Липа Экстра, печь Термофор,
-              бак 50 л, дымоход сэндвич, вентиляция.</p>
+              <br>Пол доска 40 мм, герметичный слив, выведенный в трубу наружу. Двухуровневый полок Липа Экстра, вентиляция. 
+              <br>Печь Термофор, бак 50 л, дымоход сэндвич.</p>
             <p><b>Комната:</b> вагонка сосна сорт АB, воздушный зазор, фольгированный утеплитель 8 мм, утеплитель 100 мм,
-              сухая обработанная доска 40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. Стол,
+              сухая обработанная доска 40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. <br>Стол,
               две скамьи сосна, вентиляция. <br>Пол: утеплитель 100 мм, пароизоляция, доска половая 40 мм шип паз.</p>
             <p>Скрытая проводка со светодиодными паронепроницаемыми светильниками в каждом отделении.</p>
             <p><b>Основание:</b> обработанная огнебиозащитой доска 50*150, половые лаги,  блоки для установки.</p>
@@ -170,21 +194,34 @@
         </section>
         <section class="grand_block__main">
           <div class="grand_block__main-left">
+            <!--img card-->
             <div id="img03" class="wrapper_img">
-              <button onclick="zoom('img03')">
+              <button class="noshow route" type="button" onclick="slide3()">&larr;</button>
+              <button type="button" onclick="zoom('img03')">
                 <img src="./images/Каравелла_card.png" alt="КАРАВЕЛЛА">
+                <img class="noshow" src="./images/karavela/Каравелла с терассой.jpg" alt="Каравелла с терассой">
+                <img class="noshow" src="./images/karavela/Комната каравелла 6 м.jpg" alt="Комната каравелла 6 м">
+                <img class="noshow" src="./images/karavela/Боковой полок.jpg" alt="Боковой полок">
+                <img src="./images/karavela/Комната общий вид без печи.jpg" alt="Комната общий вид без печи" class="noshow">
+                <img src="./images/karavela/Комната с табуретом.jpg" alt="Комната с табуретом" class="noshow">
+                <img src="./images/karavela/Моечная с кадкой.jpg" alt="Моечная с кадкой" class="noshow">
+                <img src="./images/karavela/Моечная.jpg" alt="Моечная" class="noshow">
+                <img src="./images/karavela/Парилка.jpg" alt="Парилка" class="noshow">
+                <img src="./images/karavela/Светильники крупно.jpg" alt="Светильники" class="noshow">
               </button>
+              <button class="noshow route" type="button" onclick="slide3('next')">&rarr;</button>
             </div>
+            <!--video btn-->
             <button class="btn btn_video" type="button">
               <a title="Обзор бани КАРАВЕЛЛА" type="video/mp4" href="./video/Обзор Каравелла 6 м.mp4">Смотреть видео обзор</a>
             </button>
             <div class="wrapper_price">
               <h3>Цена</h3>
               <ul>
-                <li><b>3x2,4 м - 129'000 руб.</b></li>
-                <li>4x2,4 м - 149'000 руб.</li>
-                <li>5x2,4 м - 169'000 руб.</li>
-                <li>6x2,4 м - 189'000 руб.</li>
+                <li><span class="rank"><b>3 x 2,4 м</b></span> - <span class="rank"><b>129 000 &#8381;</b></span></li>
+                <li><span class="rank">4 x 2,4 м</span> - <span class="rank">154 000 &#8381;</span></li>
+                <li><span class="rank">5 x 2,4 м</span> - <span class="rank">174 000 &#8381;</span></li>
+                <li><span class="rank">6 x 2,4 м</span> - <span class="rank">194 000 &#8381;</span></li>
               </ul>
             </div>
             <button class="btn" type="button">
@@ -195,8 +232,8 @@
             <h4>Материалы и комплектация</h4>
             <p><b>Парная:</b> отделка вагонкой Липа Экстра, воздушный зазор, фольгированный утеплитель 8 мм, сухая обработанная
               доска 40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. Дверь липа. <br>Пол доска 40 мм,
-              герметичный слив, выведенный в трубу наруж, утеплитель 40мм. Двухуровневый полок Липа Экстра, два декоративных
-              светильника, печь Термофор, бак 50 л, дымоход сэндвич, окно, вентиляция.</p>
+              герметичный слив, выведенный в трубу наружу, утеплитель 40 мм. Двухуровневый полок Липа Экстра, два декоративных
+              светильника, окно, вентиляция.<br>Печь Термофор, бак 50 л, дымоход сэндвич.</p>
             <p><b>Комната:</b> вагонка сосна сорт АB, воздушный зазор, фольгированный утеплитель 8 мм, сухая обработанная доска
               40 мм, мембрана от образования конденсата, имитация бруса, мягкая кровля. Стол, две скамьи сосна, вентиляция.
               <br>Пол: утеплитель 40 мм, пароизоляция, доска половая 40 мм шип паз. Дверь липа.</p>
@@ -326,7 +363,7 @@
 
   <footer>
     <hr>
-    &copy;
+    <span id="design">Разработка сайта &copy; <a href="mailto:kachid76@gmail.com">М.Кахидзе</a></span>
   </footer>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
