@@ -33,6 +33,16 @@ h1, h2, h3, h4, nav {
 	text-align: center;
 }
 
+.it_bold {
+	font-style: italic;
+	font-weight: 600;
+}
+
+.wh_bold {
+	font-weight: 600;
+	color: #6A3C35;
+}
+
 .wrapper_main {
 	display: grid;
 	grid-gap: 15px;
@@ -254,6 +264,7 @@ nav a:hover {
 
 .wrapper_nav-img {
 	max-width: 200px;
+	margin-top: 15px;
 }
 
 .wrapper_img,
@@ -276,8 +287,16 @@ nav a:hover {
 }
 
 .wrapper_price li {
+	display: flex;
+	justify-content: space-between;
 	font-size: 1.2rem;
 	line-height: 1.7rem;
+	letter-spacing: .04rem;
+}
+
+.rank {
+	word-spacing: -2px;
+	white-space: nowrap;
 }
 
 .btn {
@@ -361,6 +380,8 @@ nav a:hover {
 }
 
 .popup_img {
+	display: flex;
+	justify-content: center;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -369,13 +390,15 @@ nav a:hover {
 	background: #e9e6e6;
 }
 
-.popup_img button {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
+button.route {
+	flex-basis: 10%;
+	font-size: 6vmin;
+	font-weight: 700;
+	color: #6A3C35;
+}
+
+.noshow {
+	display: none;
 }
 
 .map {
@@ -391,10 +414,18 @@ a:hover {
 	opacity: .7;
 }
 
+li:hover {
+	background-color: #CCA388;
+}
+
 p, ul, address {
 	padding: 0 5%;
 }
 
 #contacts address {
 	font-style: normal;
+}
+
+#design {
+	font-size: 12px;
 }
