@@ -378,6 +378,10 @@ nav a:hover {
 	width: 100%;
 }
 
+.map {
+	padding: 0 5%;
+}
+
 a {
   text-decoration: none;
 }
