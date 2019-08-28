@@ -372,6 +372,38 @@ nav a:hover {
 	}
 }
 
+.wrap_reviews {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 5%;
+}
+
+.wrap_reviews video {
+	flex-grow: 1;
+	max-width: 100%;
+	width: calc(25% - 30px);
+	height: auto;
+	padding: 2%;
+	outline: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.wrap_reviews video {
+		width: calc(33.333% - 30px);
+	}
+}
+
+@media screen and (max-width: 865px) {
+	.wrap_reviews video {
+		width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.wrap_reviews video {
+		width: calc(100% - 30px);
+	}
+
 .img_normal {
 	max-width: 200px;
 }
