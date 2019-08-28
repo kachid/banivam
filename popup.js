@@ -1,3 +1,9 @@
+function listMenu() {
+  const menu = document.getElementById('nav');
+
+  menu.classList.toggle('no-display');
+}
+
 function zoom(id) {
   const img = document.getElementById(id);
   const buttons = img.querySelectorAll("button.route");
