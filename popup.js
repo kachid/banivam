@@ -2,6 +2,8 @@ function zoom(id) {
   const img = document.getElementById(id);
   const buttons = img.querySelectorAll("button.route");
 
+  document.body.classList.toggle('no_overflow');
+  img.querySelector('.img-button').classList.toggle('close');
   img.classList.toggle('popup_img');
   for (const btn of buttons) {
     btn.classList.toggle('noshow');
@@ -11,6 +13,7 @@ function zoom(id) {
 function slide(id) {
   let current = 0;
   const imgs = document.getElementById(id).querySelectorAll("img");
+
   return function(route) {
     imgs[current].classList.add('noshow');
     if (route === "next") {
