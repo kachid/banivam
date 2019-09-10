@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
 html, body {
 	margin: 0px;
 	padding: 0px;
 	color: #6A3C35;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 16px;
+	font-family: 'Vollkorn', serif;;
+	font-size: 18px;
 	background-color: #e9e6e6;
 	background-repeat: repeat-x;
 	background-position: top;
@@ -94,6 +96,11 @@ h1, h2, h3, h4, nav {
 	justify-self: end;
 }
 
+.tel1,
+.tel2 {
+	color: rgb(22, 94, 8);
+}
+
 .text {
 	grid-area: text;
 	font-size: 18px;
@@ -173,6 +180,10 @@ nav a:hover {
 	background-color: #FDFDFC;
 }
 
+.icon {
+	display: none;
+}
+
 @media screen and (max-width: 992px) {
 	nav a {
 		width: calc(50% - 30px);
@@ -180,6 +191,20 @@ nav a:hover {
 }
 
 @media screen and (max-width: 568px) {
+	.no-display a {
+		display: none;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	nav a.icon#menu {
+		display: block;
+		width: 30px;
+		align-self: flex-end;
+	}
+
 	nav a {
 		width: calc(100% - 30px);
 	}
@@ -213,7 +238,7 @@ nav a:hover {
 .grand_block__main-left {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 	min-width: 230px;
 	flex-basis: 36%;
@@ -279,6 +304,7 @@ nav a:hover {
 
 .wrapper_price {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .wrapper_price h3 {
@@ -286,12 +312,22 @@ nav a:hover {
 	border: 2px solid #6A3C35;
 }
 
-.wrapper_price li {
+.wrapper_price li,
+.wrapper_price select {
 	display: flex;
+	margin: 8px auto;
 	justify-content: space-between;
 	font-size: 1.2rem;
 	line-height: 1.7rem;
 	letter-spacing: .04rem;
+	text-align: center;
+	outline: 0;
+	color: #6A3C35;
+	border-color: transparent;
+}
+
+.wrapper_price option {
+	font-weight: 900;
 }
 
 .rank {
@@ -315,8 +351,8 @@ nav a:hover {
 }
 
 .btn_video {
-	margin-bottom: 16px;
-	color: #FDFDFC;
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
 .btn_video a[type="video/mp4"] {
@@ -324,6 +360,37 @@ nav a:hover {
 	padding-left: 20px;
 	font-size: 17px;
 	color: #6A3C35;
+}
+
+@media screen and (max-width: 390px) {
+	.btn_additions a {
+		font-size: 14px;
+	}
+}
+
+.btn_square {
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+	border: 2px solid #CCA388;
+	border-radius: 20%;
+	color: #6A3C35;
+	outline: none;
+}
+
+.btn_square:first-of-type {
+	order: 1;
+}
+
+.btn_play {
+	color: #EB814A;
+}
+
+.btn_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
 }
 
 .add_order {
@@ -361,6 +428,38 @@ nav a:hover {
 	}
 }
 
+.wrap_reviews {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 5%;
+}
+
+.wrap_reviews video {
+	flex-grow: 0;
+	width: calc(25% - 30px);
+	height: auto;
+	padding: 2%;
+	outline: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.wrap_reviews video {
+		width: calc(33.333% - 30px);
+	}
+}
+
+@media screen and (max-width: 865px) {
+	.wrap_reviews video {
+		width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.wrap_reviews video {
+		width: calc(100% - 30px);
+	}
+}
+
 .img_normal {
 	max-width: 200px;
 }
@@ -373,10 +472,10 @@ nav a:hover {
 	margin: 0 15px;
 }
 
-.carousel {
-	padding: 0 3%;
-	width: 100%;
-	box-sizing: border-box;
+.img-button {
+	border: none;
+	padding: 0;
+	outline: none;
 }
 
 .popup_img {
@@ -388,6 +487,16 @@ nav a:hover {
 	width: 100vw;
 	height: 100vh;
 	background: #e9e6e6;
+	overflow: hidden;
+}
+
+.close::after {
+	font-family: 'Material Design Icons';
+	content: '\F156';
+	font-size: 1.5rem;
+	color: #6A3C35;
+	position: absolute;
+	top: 3%;
 }
 
 button.route {
@@ -399,6 +508,10 @@ button.route {
 
 .noshow {
 	display: none;
+}
+
+.no_overflow {
+	overflow: hidden;
 }
 
 .map {
@@ -420,6 +533,64 @@ li:hover {
 
 p, ul, address {
 	padding: 0 5%;
+}
+
+.arrangement {
+	width: calc(50% - 10%);
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 1% 3%;
+	background-color: rgba(204, 163, 136, 0.3);
+}
+
+@media screen and (max-width:752px) {
+	.arrangement {
+		width: calc(100% - 10%);
+	}
+}
+
+.arrangement span {
+	font-weight: bold;
+}
+
+.arrangement li {
+	padding: 1% 5%;
+	list-style: none;
+}
+
+.arrangement li:first-of-type {
+	margin-top: 1%;
+	/*background-color: hsl(25, 68%, 85%);*/
+}
+
+.arrangement li:first-of-type::before {
+	content: 'Наши бани:';
+	padding-right: 5px;
+	color: rgb(22, 94, 8);
+ }
+
+ .arrangement li:last-of-type {
+	background-color: rgba(204, 163, 136, 0.6);
+}
+
+ .arrangement li:last-of-type::before {
+	content: 'Другие бани:';
+	padding-right: 5px;
+	color: rgb(170, 57, 22);
+ }
+
+.arrangement li:hover {
+	background-color: transparent;
+}
+
+.arrangement_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.mdi {
+	font-size: 26px;
 }
 
 #contacts address {
