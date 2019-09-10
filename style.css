@@ -378,6 +378,10 @@ nav a:hover {
 	outline: none;
 }
 
+.btn_square:first-of-type {
+	order: 1;
+}
+
 .btn_play {
 	color: #EB814A;
 }
