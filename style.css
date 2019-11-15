@@ -313,21 +313,24 @@ nav a:hover {
 }
 
 .wrapper_price li,
-.wrapper_price select {
+.wrapper_price section {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 8px auto;
 	justify-content: space-between;
 	font-size: 1.2rem;
 	line-height: 1.7rem;
 	letter-spacing: .04rem;
 	text-align: center;
-	outline: 0;
 	color: #6A3C35;
+	background-color: #e9e6e6;
 	border-color: transparent;
 }
 
-.wrapper_price option {
-	font-weight: 900;
+.wrapper_price p {
+	/*font-weight: 900;*/
+	margin: 5px;
+	padding: 5px;
 }
 
 .rank {

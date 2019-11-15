@@ -42,9 +42,10 @@ function slide(id) {
 
 const slide1 = slide('img01'),
       slide2 = slide('img02'),
-      slide3 = slide('img03');
+      slide3 = slide('img03')
+      slide4 = slide('img04');
 
-for (let index = 1; index < 4; index++) {
+for (let index = 1; index < 5; index++) {
   const id = 'article#' + index,
         img = document.getElementById(id),
         btn = img.querySelector('.btn_square'),
